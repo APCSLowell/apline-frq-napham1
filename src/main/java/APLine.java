@@ -2,13 +2,13 @@ public class APLine
 {
   private int a, b, c;
   public APLine(int x, int y, int z){
-    a = x;
-    b = y;
-    c = z;
+    this.a = x;
+    this.b = y;
+    this.c = z;
   }
   public double getSlope(){
-    return - (a/ (double) b);
+    return - (this.a/ (double) this.b);
   }
   public boolean isOnLine(int x, int y){
-    return (0 == (a*x) + (b*y) + c);
+    return (0 == (this.a * x) + (this.b * y) + this.c);
 }
